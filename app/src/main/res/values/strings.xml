@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Adl School</string>
+
+    <string-array name="url_image">
+        <item>https://lh3.googleusercontent.com/p/AF1QipO9jrkI3YWgQfqCzlKlIIzryuzmcVquXmDYKqqz=s1360-w1360-h1020</item>
+        <item>https://lh3.googleusercontent.com/p/AF1QipMARTbQlicgwzI78t4IroPGK7Wrb6uVIeZ5eH90=s1360-w1360-h1020</item>
+        <item>https://lh3.googleusercontent.com/p/AF1QipM-YRiNryexV_rewmxLawpju7ORTVbz6EC2fXqh=s1360-w1360-h1020</item>
+        <item>https://lh3.googleusercontent.com/p/AF1QipMZSYmpO_oK-6LQFXS7dXJi260LgXO4PbtqaHzx=s1360-w1360-h1020</item>
+        <item>https://lh3.googleusercontent.com/p/AF1QipNcla5gP_aJLSHrrrEDY7yXSgZaRAsZo3hSS5e0=s1360-w1360-h1020</item>
+        <item>https://lh3.googleusercontent.com/p/AF1QipOrTR67R6D7W2KyjKshu9d9Sv829qQUMc5O8VBE=s1360-w1360-h1020</item>
+        <item>https://lh3.googleusercontent.com/p/AF1QipN8Xfm2m7FULPZepObnD7E8-sEGGHC8rxpIHOP_=s1360-w1360-h1020</item>
+    </string-array>
+</resources>
