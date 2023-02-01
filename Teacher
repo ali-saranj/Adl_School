@@ -68,5 +68,53 @@
 "name":"حسین دادگستر",
 "image":"https://www.uplooder.net/img/image/13/b38640f3aa2fdab5637c98899a25443d/dadgostar.png",
 "lesone":"دبیر تاریخ"
+},
+{
+"name":"رضا شیبانی",
+"image":"https://www.uplooder.net/img/image/77/8947b91acebb64333dbbd44e16a9ad8b/shibani.jpg",
+"lesone":"زمین شناسی"
+},
+{
+"name":"محمد عطایی",
+"image":"https://www.uplooder.net/img/image/77/483ad361a3d43d3335d46479f387e751/mamad-ataii.png",
+"lesone":"دبیر انگلیسی"
+},
+{
+"name":"بهمن عطایی",
+"image":"https://www.uplooder.net/img/image/62/da33a47a95ab62049929bed133baee2b/bahmanataee.png",
+"lesone":"دبیر انگلیسی"
+},
+{
+"name":"ابراهیم فتوت",
+"image":"https://www.uplooder.net/img/image/88/d929c888fceaf4527817286cd1c4d597/ftovat.png",
+"lesone":"دبیر انگلیسی"
+},{
+"name":"امین انصاری",
+"image":"https://www.uplooder.net/img/image/15/627a021638f9b4169282fbdaff2bc173/aaminansari.png",
+"lesone":"دبیر دینی"
+},{
+"name":"غلامرضا قیصری",
+"image":"https://www.uplooder.net/img/image/95/9410a6cee77e6183d76ca53b582c00ef/qsari.png",
+"lesone":"دبیر دینی"
+},
+{
+"name":"حمید جوادیان",
+"image":"https://www.uplooder.net/img/image/50/1a287e05837d23e1d26cd6b817375dc2/javadian.png",
+"lesone":"دبیر شیمی"
+},
+{
+"name":"عبدالله نبوی",
+"image":"https://www.uplooder.net/img/image/29/8b7635a37da7d47acdaab58fb900b47e/Screenshot-from-2023-02-01-19-52-35.png",
+"lesone":"دبیر ادبیات"
+},
+{
+"name":"داراب لایقی",
+"image":"https://www.uplooder.net/img/image/39/bb431f36521e066c7a570c7ef587c06c/Screenshot-from-2023-02-01-19-53-26.png",
+"lesone":"دبیر ادبیات"
+},
+{
+"name":"عبدلحمید رسولی",
+"image":"https://www.uplooder.net/img/image/39/97110640bcc860bc9bfbf2afecf42a64/rasily.png",
+"lesone":"دبیردفاعی"
 }
 ]
