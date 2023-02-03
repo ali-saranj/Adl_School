@@ -80,11 +80,19 @@ class SchoolActivity : AppCompatActivity() {
         }
 
         binding.tvSescription.setOnClickListener {
-            if (binding.tvSescription.maxLines == 5){
+            if (binding.tvSescription.maxLines == 11){
                 binding.tvSescription.maxLines = 100
             }else{
-                binding.tvSescription.maxLines = 5
+                binding.tvSescription.maxLines = 11
             }
+        }
+
+        binding.cord1.setOnClickListener {
+            startActivity(Intent(this,NewActivity::class.java))
+        }
+
+        binding.card2.setOnClickListener {
+            startActivity(Intent(this,TecherActivity::class.java))
         }
 
     }

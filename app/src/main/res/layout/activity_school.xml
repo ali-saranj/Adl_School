@@ -93,7 +93,7 @@
                 android:layout_margin="8dp"
                 android:ellipsize="end"
                 android:fontFamily="@font/iransans"
-                android:maxLines="5"
+                android:maxLines="11"
                 android:padding="8dp"
                 android:text="a"
                 android:textColor="@color/black"
