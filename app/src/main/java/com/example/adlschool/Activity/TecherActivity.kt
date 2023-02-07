@@ -1,10 +1,15 @@
 package com.example.adlschool.Activity
 import android.os.Bundle
+import android.util.Log
 import android.view.View.GONE
 import android.view.animation.AnimationUtils
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.GridLayoutManager
+import com.android.volley.Request
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.example.adlschool.Adapter.CustomAdapterTeacher
 import com.example.adlschool.Model.Teacher
 import com.example.adlschool.databinding.ActivityTecherBinding
@@ -42,25 +47,23 @@ class TecherActivity :  AppCompatActivity() {
     }
 
     fun getdata(){
-        var s = ""
-        Thread{
-            try {
-                var input =
-                    Scanner(URL("https://raw.githubusercontent.com/ali-saranj/Adl_School/master/Teacher").openStream())
-                while (input.hasNext()) {
-                    s += input.nextLine()
-                }
-                var teachers = parseToTeacher(s)
-                this.teachers.addAll(teachers)
-                runOnUiThread {
-                    binding.progressBarListTeacher.visibility = GONE
-                    binding.listTeacher.adapter = CustomAdapterTeacher(teachers,this)
-                }
+        val queue = Volley.newRequestQueue(this)
+        val url = "https://raw.githubusercontent.com/ali-saranj/Adl_School/master/Teacher"
 
-            }catch (e:Exception){
-                e.printStackTrace()
-            }
-        }.start()
+// Request a string response from the provided URL.
+        val stringRequest = StringRequest(
+            Request.Method.GET, url,
+            { response ->
+                teachers = parseToTeacher(response)
+                binding.progressBarListTeacher.visibility = GONE
+                binding.listTeacher.adapter = CustomAdapterTeacher(teachers,this)
+            },
+            {
+                Toast.makeText(this, it.message.toString(), Toast.LENGTH_SHORT).show()
+            })
+
+// Add the request to the RequestQueue.
+        queue.add(stringRequest)
     }
 
     fun parseToTeacher(s :String):ArrayList<Teacher> {

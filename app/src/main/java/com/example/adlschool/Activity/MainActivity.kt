@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         binding.imageMain.animate().alpha(1f).setDuration(3000).duration
         Thread{
             Thread.sleep(3500)
+            finish()
             startActivity(Intent(this, SchoolActivity::class.java))
         }.start()
     }

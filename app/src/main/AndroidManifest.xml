@@ -17,7 +17,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Activity.NewActivity"
+            android:name=".Activity.MangerActivity"
             android:theme="@style/Theme.AdlSchool.NoActionBar"
             android:exported="false">
             <meta-data
@@ -25,9 +25,17 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".Activity.NewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AdlSchool.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Activity.TecherActivity"
-            android:theme="@style/Theme.AdlSchool.NoActionBar"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/Theme.AdlSchool.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

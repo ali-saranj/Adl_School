@@ -7,6 +7,9 @@ import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.android.volley.Request
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.example.adlschool.Adapter.CustomAdapterNew
 import com.example.adlschool.Adapter.CustomAdapterTeacher
 import com.example.adlschool.Model.New
@@ -46,27 +49,26 @@ class NewActivity : AppCompatActivity() {
     }
 
     fun getdata(){
-        var s = ""
-        Thread{
-            try {
-                var input = Scanner(URL("https://raw.githubusercontent.com/ali-saranj/Adl_School/master/news").openStream())
-                while (input.hasNext()) {
-                    s += input.nextLine()
-                }
-                var news = parseToTeacher(s)
-                this.news.addAll(news)
-                runOnUiThread {
-                    binding.progressBarListTeacher.visibility = View.GONE
-                    binding.listNew.adapter = CustomAdapterNew(news,this)
-                }
+        val queue = Volley.newRequestQueue(this)
+        val url = "https://raw.githubusercontent.com/ali-saranj/Adl_School/master/news"
 
-            }catch (e:Exception){
-                e.printStackTrace()
-            }
-        }.start()
+// Request a string response from the provided URL.
+        val stringRequest = StringRequest(
+            Request.Method.GET, url,
+            { response ->
+                news = parseToNews(response)
+                binding.progressBarListTeacher.visibility = View.GONE
+                binding.listNew.adapter = CustomAdapterNew(news,this)
+            },
+            {
+                Toast.makeText(this, it.message.toString(), Toast.LENGTH_SHORT).show()
+            })
+
+// Add the request to the RequestQueue.
+        queue.add(stringRequest)
     }
 
-    fun parseToTeacher(s :String):ArrayList<New> {
+    fun parseToNews(s :String):ArrayList<New> {
         var news =ArrayList<New>()
         var jsonArray = JSONArray(s)
         for (i in 0 until jsonArray.length()){

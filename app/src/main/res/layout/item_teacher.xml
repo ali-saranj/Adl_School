@@ -36,8 +36,7 @@
                 android:id="@+id/image_item_teacher"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/ic_launcher_background"/>
+                android:scaleType="fitXY"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -59,7 +58,7 @@
             android:id="@+id/tv_item_teacher_leson"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:layout_margin="8dp"
             android:fontFamily="@font/iransans"
             android:text="علی"

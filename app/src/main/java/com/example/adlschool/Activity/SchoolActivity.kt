@@ -7,6 +7,7 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.text.Html
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -23,13 +24,13 @@ class SchoolActivity : AppCompatActivity() {
     lateinit var binding: ActivitySchoolBinding
     var i= 0
 
-    var html = "<p>دوره دوم متوسطه- نظری پسرانه عدل دانشگاه ، از جمله مدارس غیر دولتی استان اصفهان بوده که در محدوده ناحیه 3 اصفهان قرار دارد. مدرسه عدل دانشگاه به مدیریت ، در نشانی خیابان هزار جریب، مقابل سازمان جهاد کشاورزی، درب جنگلبانی دانشگاه اصفهان، پشت دبیرستان البرز واقع شده است.\n" +
+    var html = "<p>دبیرستان دوره دوم پسرانه عدل دانشگاه ، از جمله مدارس غیر دولتی استان اصفهان بوده که در محدوده ناحیه 3 اصفهان قرار دارد. مدرسه عدل دانشگاه به مدیریت آقای مومنی، در نشانی خیابان هزار جریب، مقابل سازمان جهاد کشاورزی، درب جنگلبانی دانشگاه اصفهان، پشت دبیرستان البرز واقع شده است.\n" +
             "\n" +
-            "این مدرسه که در لیست مدارس غیر دولتی اصفهان قرار دارد دارای امکانات علمی و آموزشی متنوعی برای دانش آموزان دوره دوم متوسطه- نظری می باشد و آمادگی پاسخگویی مستمر به سوالات اولیاء گرامی اصفهان را با تماس با تلفن true فراهم نموده است." +
+            "این مدرسه که در لیست مدارس غیر دولتی اصفهان قرار دارد دارای امکانات علمی و آموزشی متنوعی برای دانش آموزان می باشد و آمادگی پاسخگویی مستمر به سوالات اولیاء گرامی اصفهان را با تماس با تلفن فراهم نموده است." +
             "<h2>تاسیس</h2>" +
             "<p>مدرسه پسرانه عدل دانشگاه با مشارکت و تلاش بی وقفه ی جمعی از خیرین مدرسه ساز پس از 2ساله در سال 1353 وارد چرخه آموزشی کشور شده و پذیرای فرزندان ایران زمین بوده است.\n" +
             "\n" +
-            "پسرانه دوره دوم متوسطه- نظری عدل دانشگاه، دارای بنای آموزشی 335 مترمربع می باشد. همچنین مساحت محیط ورزشی و سرباز مدرسه ی عدل دانشگاه، به میزان 513 متر مربع بوده که از این منظر، نمره قابل قبولی دارد.</p>"
+            "دبیرستان دوره دوم پسرانه عدل دانشگاه، دارای بنای آموزشی 335 مترمربع می باشد. همچنین مساحت محیط ورزشی و سرباز مدرسه ی عدل دانشگاه، به میزان 513 متر مربع بوده که از این منظر، نمره قابل قبولی دارد.</p>"
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -88,12 +89,18 @@ class SchoolActivity : AppCompatActivity() {
         }
 
         binding.cord1.setOnClickListener {
+            it.startAnimation(AnimationUtils.loadAnimation(this,android.R.anim.fade_in))
             startActivity(Intent(this,NewActivity::class.java))
         }
 
         binding.card2.setOnClickListener {
+            it.startAnimation(AnimationUtils.loadAnimation(this,android.R.anim.fade_in))
             startActivity(Intent(this,TecherActivity::class.java))
         }
 
+        binding.card3.setOnClickListener {
+            it.startAnimation(AnimationUtils.loadAnimation(this,android.R.anim.fade_in))
+            startActivity(Intent(this,MangerActivity::class.java))
+        }
     }
 }
