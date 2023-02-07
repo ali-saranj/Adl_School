@@ -15,6 +15,11 @@
 "lesone":"دبیر فیزیک"
 },
 {
+"name":"محمدعلی شیرزاد",
+"image":"https://www.uplooder.net/img/image/8/d170ebd5e46e4d3f017e7a52d2b3a38b/Screenshot-from-2023-02-07-12-23-07.png",
+"lesone":"دبیر فیزیک"
+},
+{
 "name":" مصطفی اصلاحی",
 "image":"https://www.uplooder.net/img/image/30/1f7486b7d1d0419fdac4ebde01efe04d/sedmostafa.jpg",
 "lesone":"دبیر فیزیک"
@@ -92,9 +97,20 @@
 "name":"امین انصاری",
 "image":"https://www.uplooder.net/img/image/15/627a021638f9b4169282fbdaff2bc173/aaminansari.png",
 "lesone":"دبیر دینی"
-},{
+},
+{
 "name":"غلامرضا قیصری",
 "image":"https://www.uplooder.net/img/image/95/9410a6cee77e6183d76ca53b582c00ef/qsari.png",
+"lesone":"دبیر دینی"
+},
+{
+"name":"امیرمحمد حیدری",
+"image":"hhttps://www.uplooder.net/img/image/73/50d57136ddca6e6e2ffcb8ec82fe5259/hadari.jpg",
+"lesone":"دبیر دینی"
+},
+{
+"name":"مجید توسلی",
+"image":"https://www.uplooder.net/img/image/91/5d3788b3dde994691f5809ea47acf610/Screenshot-from-2023-02-07-12-18-15.png",
 "lesone":"دبیر دینی"
 },
 {
@@ -103,8 +119,18 @@
 "lesone":"دبیر شیمی"
 },
 {
+"name":"محمدحسین درویش",
+"image":"https://www.uplooder.net/img/image/16/d5ecd165d9ca4a18d962fd10785ce640/Screenshot-from-2023-02-07-12-21-22.png",
+"lesone":"دبیر شیمی"
+},
+{
 "name":"عبدالله نبوی",
 "image":"https://www.uplooder.net/img/image/29/8b7635a37da7d47acdaab58fb900b47e/Screenshot-from-2023-02-01-19-52-35.png",
+"lesone":"دبیر ادبیات"
+},
+{
+"name":"بهمن مومنی",
+"image":"https://www.uplooder.net/img/image/34/61edf7c7784e3d580e56552a10c5272c/Screenshot-from-2023-02-07-12-25-17.png",
 "lesone":"دبیر ادبیات"
 },
 {
